@@ -1,0 +1,16 @@
+<h1>Upcoming Angular Events </h1>
+<hr>
+<div class="row">
+    <div class="col-md-5" *ngFor="let each_event of eventData">
+        <event-thumbnail
+        [event_data]="each_event" #thumbnail (out_event_data)="handleClickeEvent($event)">
+        </event-thumbnail>
+        <p></p>
+    </div>
+
+
+    <hr>
+</div>
+
+<!-- <button class="btn btn-primary" (click)="thumbnail.accessPublicMethodInParent()">
+  Acces Child Public Methods and Properties </button> -->

@@ -1,0 +1,16 @@
+<div class="continer">
+  <div>
+    <div class="well hoverwell thumbnail" (click)="displayNameInToaster()">
+      <h2>{{event_data?.name}}</h2>
+      <div>Date : {{event_data?.date}}</div>
+      <div>Time : {{event_data?.time}}</div>
+      <div>Price : ${{event_data?.price}}</div>
+      <div>
+        <span>Location : {{event_data?.location?.address}}</span>
+        <span>&nbsp;&nbsp;</span>
+        <span>{{event_data?.location?.city}},{{event_data?.location?.country}}</span>
+      </div>
+      <button class="btn btn-primary" (click)="handleClickeEvent()">@Input@OutputDemo</button>
+    </div>
+  </div>
+</div>
